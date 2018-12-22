@@ -1,0 +1,66 @@
+// Font
+$font:     "Work Sans", sans-serif;
+
+
+// Color
+$w:             #FFFFFF;
+
+$primary:       #36D7B7;
+$secondary:     #002047;
+$c_heading:     #212121;
+$c_body:        #363636;
+
+$bg_color:      #F6F6F6;
+
+$bg_footer:     #2D3E50;
+$c_bfooter: #ffffff26;
+
+
+// GRID BOOTSTRAPS
+@mixin xs-down() {
+    @media (max-width: 575.98px) {
+        @content;
+    }
+}
+
+@mixin xs-up() {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin small-down() {
+    @media (max-width: 767.98px) {
+        @content;
+    }
+}
+
+@mixin small-up() {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin medium-down() {
+    @media (max-width: 991.98px) {
+        @content;
+    }
+}
+
+@mixin medium-up() {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin large-down() {
+    @media (max-width: 1199.98px) {
+        @content;
+    }
+}
+
+@mixin large-up() {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}

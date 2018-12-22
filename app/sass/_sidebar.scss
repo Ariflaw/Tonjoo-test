@@ -1,0 +1,222 @@
+/////////////////////////
+///SIDEBAR
+#sidebar {
+    .widget {
+        background-color: $w;
+        box-shadow: 1px 3px 6px #0000001c;
+        margin-bottom: 30px;
+
+        .widget-title {
+            text-transform: uppercase;
+            color: $primary;
+            font-weight: 700;
+            font-size: 18px;
+            padding: 15px 25px;
+            border-bottom: 1px solid #eee;
+        }
+
+        /// LEAVE MESSAGE
+        .form_contact {
+            padding: 25px;
+
+            .form-group {
+                margin-bottom: 20px;
+            }
+
+            input, textarea {
+                display: block;
+                border-radius: 0px;
+                border-color: #ebe8e8;
+                outline: none;
+                padding: 10px 10px;
+                height: auto;
+
+                &:focus {
+                    box-shadow: none;
+                    border-color: $primary;
+                }
+
+                &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    font-size: 16px;
+                    color: $c_body;
+                    opacity: 1; /* Firefox */
+                }
+                
+                &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    font-size: 16px;
+                    color: $c_body;
+                }
+                
+                &::-ms-input-placeholder { /* Microsoft Edge */
+                    color: $c_body;
+                    font-size: 16px;
+                }
+            }
+
+            .btn{
+                display: inline-block;
+                background-color: $primary;
+                color: $w;
+                text-transform: uppercase;
+                border-color: $primary;
+                width: 100%;
+                border-radius: 3px;
+                padding: 10px 0;
+            }
+        }
+
+        /// CONTACT AGEN
+        .contact_content {
+            .profile {
+                padding: 30px 0;
+                text-align: center;
+
+                img{
+                    width: 100%;
+                    max-width: 100px;
+                    border-radius: 100%;
+                }
+
+                h5 {
+                    margin-top: 20px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: $c_heading;
+                }
+            }
+            
+            .contact_info{
+                display: flex;
+                position: relative;
+                height: 100%;
+                border-top: 1px solid #eee;
+
+                .email, .phone {
+                    // width: 0%;
+                    float: left;
+                    // display: inline-block;
+                    font-weight: 700;
+                    text-align: center;
+                    padding: 12px 0;
+                    $color: $secondary;
+                }
+
+                .fa {
+                    color: $primary;
+                    font-size: 16px;
+                    padding-right: 8px;
+                }
+
+                .email {
+                    max-width: 52%;
+                    width: 100%;
+                    border-right: 1px solid #eee;
+                }
+
+                .phone {
+                    max-width: 48%;
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+    
+}
+
+// WIDGET SEARCH PROPERTY
+#search_property {
+    .nav-tabs {
+        width: 100%;
+
+        .nav-item {
+            text-transform: uppercase;
+            color: $w;
+            border-radius: 0;
+            border: 0;
+            background-color: $secondary;
+            padding: 12px 30px;
+            width: 50%;
+            text-align: center;
+            opacity: 0.85;
+
+            .fa {
+                font-size: 18px;
+            }
+
+            &.active {
+                opacity: 1;
+                background-color: $primary;
+            }
+        }
+    }
+
+    .tab-content {
+        padding: 20px 25px;
+
+        .form-group {
+            margin-bottom: 25px;
+
+            label {
+                text-transform: uppercase;
+                font-weight: 600;
+                color: $c_heading;
+                font-size: 13px;
+            }
+
+            .select-wrapper {
+                position: relative;
+
+                &::after {
+                    content: "\f0d7";
+                    font-family: "FontAwesome";
+                    position: absolute;
+                    top: 10%;
+                    left: auto;
+                    right: 18px;
+                    font-size: 24px;
+                    color: #d7d7d7;
+                }
+            }
+
+            .form-control, select {
+                border-radius: 0px;
+                -webkit-appearance: none; 
+                -moz-appearance: none;
+                appearance: none;
+                font-size: 14px;
+                height: auto;
+                padding: 12px 18px;
+                border-color: #ebe8e8;
+
+                &:focus {
+                    box-shadow: none;
+                    border-color: $primary;
+                }
+            }
+        }
+
+        .search_btn {
+            display: block;
+            background-color: $secondary;
+            color: $w;
+            text-transform: uppercase;
+            width: 100%;
+            font-size: 17px;
+            text-align: left;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+            }
+
+            .fa {
+                padding-right: 5px;
+                font-size: 26px;
+            }
+        }
+    }
+}

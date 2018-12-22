@@ -1,0 +1,146 @@
+#main_content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $bg_color;
+}
+
+#list_content {
+    .content_list {
+        position: relative;
+        margin-bottom: 20px;
+
+        .image {
+            // padding: 0;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .price {
+                position: absolute;
+                right: 15px;
+                top: 20px;
+                background-color: $primary;
+                font-size: 18px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $w;
+                padding: 10px 15px 10px 30px;
+            }
+        }
+
+        .desc {
+            background-color: $w;
+            margin-left: -15px;
+            padding: 20px 25px;
+
+            @include small-down{
+                margin-right: 15px;
+                margin-left: 15px;
+            }
+
+            @include xs-down {
+                padding: 15px;
+            }
+
+            h3 {
+                text-transform: uppercase;
+                font-size: 17px;
+                font-weight: 600;
+                padding-bottom: 20px;
+                margin-bottom: 0;
+            }
+
+            p {
+                margin-bottom: 15px;
+            }
+
+            .info {
+                display: flex;
+                position: relative;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                border-top: 3px solid #eee;
+                border-bottom: 1px solid #ebe8e8;
+
+                li {
+                    float: left;
+                    // display: inline-block;
+                    width: (100%/3);
+                    text-align: center;
+                    margin: 5px 0;
+                    padding: 5px 0;
+                    border-left: 1px solid #ebe8e8;
+
+                    &:first-child{
+                        border-left: none;
+                    }
+
+                    .fa {
+                        color: $primary;
+                        padding-right: 10px;
+
+                        @include xs-down {
+                            padding-right: 5px;
+                        }
+                    }
+
+                    span {
+                        font-weight: 600;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+// PAGINATIION
+#pagination {
+    background-color: $w;
+    margin-bottom: 30px;
+
+    .list_pagination {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            padding: 15px 5px;
+
+            a {
+                color: $secondary;
+                font-weight: 600;
+
+                &.active {
+                    color: $primary;
+                }
+            }
+
+            .fa{
+                color: $primary;
+                font-size: 20px;
+            }
+
+            &.left {
+                float: left;
+                padding: 15px 20px;
+            }
+    
+            &.right{
+                float: right;
+                padding: 15px 20px;
+            }
+        }
+
+        
+    }
+}
+
+
+

@@ -1,0 +1,38 @@
+#main_header{
+
+    .navbar {
+        padding-left: 30px;
+        margin: 0 -15px;
+
+        .navbar-toggler {
+            border-color: $secondary;
+        }
+    }
+
+    .navbar-nav {
+        .nav-item{
+            text-transform: uppercase;
+            
+            @media (min-width: 991.98px) {
+                padding-left: 40px;
+            }
+
+            .nav-link{
+                color: $secondary;
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: 0.2px;
+            }
+        }
+    }
+}
+
+#header_image{
+    min-height: 300px;
+
+    display: block;
+    background-image: url("../images/bg_header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 22%;
+}

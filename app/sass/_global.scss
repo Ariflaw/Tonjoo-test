@@ -1,0 +1,39 @@
+body {
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 400;
+    color: $c_body;
+    // letter-spacing: 0.2px;
+
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.btn-default {
+    background-color: $primary;
+    color: $w;
+    text-transform: uppercase;
+}
+
+.btn,
+.btn:hover,
+.btn:active,
+.btn:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+.clearfix {
+
+
+    &::before {
+        content: '';
+        clear: both;
+    }
+
+    &::after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}
