@@ -1,6 +1,4 @@
-# Tonjoo Test
-
-Tonjoo Test Source Code
+# Tonjoo Test Source Code
 
 Source Code ada di folder /app
 
