@@ -16,6 +16,12 @@
     .widget {
         // opacity: 0.85;
 
+        @include xs-down {
+            &.widget_text {
+                text-align: center;
+            }
+        }
+
         .widget_title{
             color: $primary;
             text-transform: uppercase;
@@ -52,7 +58,7 @@
                 text-transform: uppercase;
                 color: $w;
                 opacity: 0.8;
-                font-size: 13px;
+                font-size: 12px;
                 font-weight: 600;
                 text-decoration: none;
                 border-bottom: 1px solid #eee;
@@ -93,7 +99,7 @@
 // COPYRIGHT
 #copyright {
     background-color: $bg_footer;
-    padding: 20px 0 30px;
+    padding: 20px 0 50px;
     color: #eee;
     text-transform: uppercase;
 

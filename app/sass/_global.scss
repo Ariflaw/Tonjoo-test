@@ -9,6 +9,16 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+input, textarea, button, .form-control {
+    border-radius: 0;
+    border-color: #e1e1e1;
+
+    &:focus {
+        box-shadow: none;
+        border-color: $primary;
+    }
+}
+
 .btn-default {
     background-color: $primary;
     color: $w;

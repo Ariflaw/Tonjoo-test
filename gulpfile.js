@@ -20,6 +20,7 @@ gulp.task('browserSync', function() {
     browserSync.init({
         server: {
             baseDir: './app',
+            index: "single.html",
             routes: {
                 "/bower_components": "bower_components"
             }
@@ -81,8 +82,8 @@ gulp.task('useref', function() {
 gulp.task('watch', ['browserSync', 'sass'], function (){
   gulp.watch('app/sass/**/*.scss', ['sass']);
   // Reloads the browser whenever HTML or JS files change
-  gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/js/**/*.js', browserSync.reload);
+  gulp.watch('app/*.html').on("change", browserSync.reload);
+  gulp.watch('app/js/**/*.js').on("change", browserSync.reload);
 });
 
 
